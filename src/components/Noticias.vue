@@ -1,5 +1,3 @@
 <template>
-    <div>
-        <h2>batata frita</h2>
-    </div>
+    <v-card text="..." variant="tonal"></v-card>
 </template>
