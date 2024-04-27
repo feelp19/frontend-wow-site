@@ -9,7 +9,7 @@
                                         <v-text-field v-model="last" color="primary" label="Sobrenome"
                                                 variant="underlined"></v-text-field>
 
-                                        <v-text-field v-model="last" color="primary" label="Nome de usuário"
+                                        <v-text-field v-model="username" color="primary" label="Nome de usuário"
                                         variant="underlined"></v-text-field>
 
                                         <v-text-field v-model="password" color="primary" label="Senha"
@@ -80,6 +80,7 @@ export default {
                 ],
                 first: null,
                 last: null,
+                username: null,
                 email: null,
                 password: null,
                 terms: false,
