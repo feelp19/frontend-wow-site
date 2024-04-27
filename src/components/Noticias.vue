@@ -1,3 +1,4 @@
 <template>
-    <v-card text="..." variant="tonal"></v-card>
+    <v-card text="..." variant="tonal">
+    </v-card>
 </template>
