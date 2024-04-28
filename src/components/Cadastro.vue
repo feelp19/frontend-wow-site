@@ -46,11 +46,11 @@
                                         <v-text-field v-model="email" readonly color="primary" label="Email"
                                                 variant="underlined"></v-text-field>
 
-                                        <v-text-field v-model="username" readonly color="primary" label="User Name"
+                                        <v-text-field v-model="username" readonly color="primary" label="Username"
                                         variant="underlined"></v-text-field>
 
-                                        <v-text-field v-model="password" readonly color="primary" label="Password"
-                                                placeholder="Enter your password" variant="underlined"></v-text-field>
+                                        <v-text-field v-model="password" readonly color="primary" label="Password" 
+                                        variant="underlined"></v-text-field>
 
                                         <v-checkbox v-model="terms" color="secondary"
                                                 label="Li e aceito os termos"></v-checkbox>
