@@ -27,7 +27,7 @@
         </router-link>
         <v-col cols="6" sm="2">
           <v-text-field
-            v-model="search"
+            
             label="pesquisar"
             prepend-inner-icon="mdi-magnify" variant="underlined"
             persistent-hint single-line>
