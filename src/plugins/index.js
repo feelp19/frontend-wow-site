@@ -9,6 +9,7 @@ import vuetify from './vuetify'
 import router from '@/router'
 import VueMask from '@devindex/vue-mask'
 
+
 export function registerPlugins (app) {
   app
     .use(vuetify)
