@@ -85,7 +85,7 @@ export default {
 
         methods: {
                 sendData(){
-                        console.log(this.first.value)
+                        console.log(this.first)
                 }
         }
 }
