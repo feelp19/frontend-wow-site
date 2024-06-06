@@ -3,11 +3,16 @@
         <template v-slot:image>
             <v-img gradient="to top right, rgba(18,18,18,.8), rgba(18,18,18,.8)"></v-img>
         </template>
-        <br />
+        <div class="d-flex">
+            <appContent />
+            <serverStatus />
+        </div>
+
     </v-card>
 </template>
 
 <script>
-
+import appContent from "@/components/appContent.vue";
+import serverStatus from "@/components/serverStatus.vue"
 
 </script>
