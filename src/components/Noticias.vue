@@ -6,7 +6,7 @@
     </v-card>
         <v-col cols="12" md="12">
             <v-card 
-            class="pa-4 ma-4"
+            class="pa-2"
             variant="outlined">
 
             <v-card-item>
