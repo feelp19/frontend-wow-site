@@ -5,10 +5,12 @@
       :key="item.title"
       :href="item.href"
       :title="item.title"
-      class="d-inline-block mx-2 social-link"
+      class="d-inline-block mx-2 social-link social"
       rel="noopener noreferrer"
       target="_blank"
+      style="text-decoration: none; font-size: 0.9rem"
     >
+  {{ item.autor }}
       <v-icon
         :icon="item.icon"
         :size="item.icon === '$vuetify' ? 24 : 16"
@@ -19,7 +21,7 @@
       class="text-caption text-disabled"
       style="position: absolute; right: 16px;"
     >
-      &copy{{ (new Date()).getFullYear() }} -  <span class="d-none d-sm-inline-block">Felipe de Pietro</span>
+      &copy{{ (new Date()).getFullYear() }} 
     </div>
   </v-footer>
 </template>
@@ -30,7 +32,14 @@
       title: 'feelp19 GitHub',
       icon: `mdi-github`,
       href: 'https://github.com/feelp19/',
+      autor: 'Felipe de Pietro'
     },
+    {
+      title: 'Miguel Github',
+      icon: 'mdi-github',
+      href: 'https://github.com/MiguelKauadePietro/',
+      autor: 'Miguel de Pietro'
+    }
   ]
 </script>
 

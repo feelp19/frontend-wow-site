@@ -8,7 +8,7 @@
             <v-card 
             class="pa-4 ma-4"
             variant="outlined">
-            
+
             <v-card-item>
                 <v-icon icon="mdi-information"></v-icon>
                 <v-card-title class="mt-4"><bold>Noticias do dia</bold></v-card-title>

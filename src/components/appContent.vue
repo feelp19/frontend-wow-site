@@ -1,6 +1,6 @@
 <template>
   <v-col cols="8">
-        <v-card class="pa-4 ma-4">
+        <v-card class="pa-4">
             <v-card-item>
                 <v-card style="position: absolute; left: 200px;"></v-card>
                 <v-icon icon="mdi-antenna"></v-icon>
