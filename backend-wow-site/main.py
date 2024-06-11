@@ -1,4 +1,5 @@
 from connection import Connection
 
-db = Connection
-db.connect()
+conn = Connection()
+resultado = conn.connect()
+print(resultado)

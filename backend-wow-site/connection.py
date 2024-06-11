@@ -1,21 +1,23 @@
 import mysql.connector
+from mysql.connector import errorcode
+import os
 
 class Connection:
-    def __init__(self, host, user, password, db):
-        self.host = host
-        self.user = user
-        self.password = password
-        self.db = db
-
+    def __init__(self):
+        self.conexao = None
+    
     def connect(self):
         try:
-            conn = mysql.connector.connect(self.host, self.user, self.password, self.db)
-            if conn:
+            if not self.conexao:
+                host = os.getenv('HOST')
+                user = os.getenv('USER')
+                password = os.getenv('PASSWORD')
+                database = os.getenv('DATABASE')
+
+                self.conexao = mysql.connector.connect(host = host, user = user, password = password, database = database)
+
                 return f'Conectado'
             else:
-                return f'Nao foi possivel conectar'
-
-        except mysqlError as Error:
-            return f'Nao foi possivel conectar {Error}'
-
-
+                return f'Conexao ja estabelecida'
+        except mysql.connector.Error as err:
+            return f'Nao foi possivel conectar: {err}'

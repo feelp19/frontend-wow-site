@@ -16,7 +16,7 @@
                                                 <v-text-field v-model="email" color="primary" label="Confirmar Email"
                                                         variant="underlined"></v-text-field>
                                                 <v-text-field v-model="password" color="primary" label="Senha"
-                                                        placeholder="Enter your password"
+                                                        placeholder="Sua senha"
                                                         variant="underlined"></v-text-field>
 
                                         </v-container>
@@ -40,10 +40,10 @@
                                                         variant="underlined"></v-text-field>
 
                                                 <v-text-field v-model="username" readonly color="primary"
-                                                        label="Username" variant="underlined"></v-text-field>
+                                                        label="Nome de usuario" variant="underlined"></v-text-field>
 
                                                 <v-text-field v-model="password" readonly color="primary"
-                                                        label="Password" variant="underlined"></v-text-field>
+                                                        label="Senha" variant="underlined"></v-text-field>
 
                                                 <v-checkbox v-model="terms" color="secondary"
                                                         label="Li e aceito os termos"></v-checkbox>
