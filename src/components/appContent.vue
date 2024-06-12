@@ -1,8 +1,8 @@
 <template>
   <v-col cols="8">
-        <v-card class="pa-4">
+        <v-card class="pa-4 vh-height">
             <v-card-item>
-                <v-card style="position: absolute; left: 200px;"></v-card>
+                <v-card style="position: absolute; left: 200px;"</v-card>
                 <v-icon icon="mdi-antenna"></v-icon>
                 <v-card-title class="mt-4">
                     <bold>Status do Servidor</bold>
@@ -16,3 +16,9 @@
         </v-card>
     </v-col>
 </template>
+
+<style scoped>
+.vh-height {
+  height: 100vh; /* Define a altura desejada em relação à altura da viewport */
+}
+</style>

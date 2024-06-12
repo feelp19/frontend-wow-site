@@ -23,7 +23,7 @@
         </router-link>
 
         <router-link to="/sobre">
-          <v-btn>Sobre o jogo</v-btn>
+          <v-btn>Sobre o servidor</v-btn>
         </router-link>
         <v-col cols="6" sm="2">
           <v-text-field

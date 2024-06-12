@@ -12,7 +12,7 @@
             <v-card-item>
                 <v-icon icon="mdi-information"></v-icon>
                 <v-card-title class="mt-4"><bold>Noticias do dia</bold></v-card-title>
-                    <v-card-subtitle>Noticias Fresquinhas do WoW</v-card-subtitle>
+                    <v-card-subtitle>Noticias Fresquinhas do Servidor</v-card-subtitle>
             </v-card-item>
             <v-icon></v-icon>
             <v-card-text class="bg-surface-light pt-4">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
