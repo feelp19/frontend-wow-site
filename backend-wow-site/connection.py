@@ -1,23 +1,11 @@
-import mysql.connector
-from mysql.connector import errorcode
 import os
+from supabase import create_client, Client
+from dotenv import load_dotenv
 
 class Connection:
     def __init__(self):
-        self.conexao = None
-    
-    def connect(self):
-        try:
-            if not self.conexao:
-                host = os.getenv('HOST')
-                user = os.getenv('USER')
-                password = os.getenv('PASSWORD')
-                database = os.getenv('DATABASE')
+        self.load_dotenv()
 
-                self.conexao = mysql.connector.connect(host = host, user = user, password = password, database = database)
-
-                return f'Conectado'
-            else:
-                return f'Conexao ja estabelecida'
-        except mysql.connector.Error as err:
-            return f'Nao foi possivel conectar: {err}'
+    def conectar(self):
+        self.url: str = os.getenv("URL")
+        self.key: str = os.getenv("KEY")
