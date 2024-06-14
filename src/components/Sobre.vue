@@ -1,9 +1,5 @@
 <template>
-
-    
-
-
-    <v-card class="vw-width pa-4 ma-4">
+    <v-card class="vw-width pa-4 ma-6 mx-auto">
         <v-col cols="12" md="12">
             <v-card-item>
                 <v-card-title>História do servidor</v-card-title>
@@ -16,6 +12,6 @@
 
 <style scoped>
 .vw-width {
-  width: 50vw; /* Define a altura desejada em relação à altura da viewport */
+  width: 95vw; /* Define a altura desejada em relação à altura da viewport */
 }
 </style>
