@@ -12,6 +12,6 @@
 
 <style scoped>
 .vw-width {
-  width: 95vw; /* Define a altura desejada em relação à altura da viewport */
+  width: 95vw;
 }
 </style>

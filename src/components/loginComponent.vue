@@ -6,13 +6,10 @@
 
     <v-dialog
       v-model="dialog"
-      width="auto"
     >
       <v-card
         image="@/assets/castle-bg.jpg"
-        class="pa-6 bd-radius"
-        width="70vw"
-        height="40vh"
+        class="pa-6 bd-radius w-25 h-75 mx-auto"
         title="Login"
       >
 

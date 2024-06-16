@@ -48,6 +48,9 @@
 </template>
 
 <script>
+
+import Login from '@/components/loginComponent.vue';
+
 data: () => ({
   search: ''
 })
