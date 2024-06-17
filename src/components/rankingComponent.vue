@@ -1,5 +1,5 @@
 <template>
-        <v-col cols="2">
+        <v-col cols="4">
           <v-card class="pa">
             <v-card-title>
               Ranking

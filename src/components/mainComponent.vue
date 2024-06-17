@@ -26,13 +26,12 @@
           <v-btn>Sobre</v-btn>
         </router-link>
 
-        <router-link to="/login">
-          <v-btn>Login</v-btn>
+        <router-link>
+          <LoginComponent />
         </router-link>
         
         <v-col cols="6" sm="2">
           <v-text-field
-
             label="pesquisar"
             prepend-inner-icon="mdi-magnify" variant="underlined"
             persistent-hint single-line>
@@ -49,7 +48,7 @@
 
 <script>
 
-import Login from '@/components/loginComponent.vue';
+import LoginComponent from '@/components/loginComponent.vue';
 
 data: () => ({
   search: ''

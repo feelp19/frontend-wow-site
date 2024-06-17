@@ -6,6 +6,7 @@
 
     <v-dialog
       v-model="dialog"
+      persistent
     >
       <v-card
         image="@/assets/castle-bg.jpg"
@@ -22,7 +23,17 @@
             class="ms-auto mt-2"
             type = "submit"
             text="Login"
+            color="success"
+            outlined
+          ></v-btn>
+
+          <v-btn
+            class="mt-2"
+            type = "submit"
+            text="Cancelar"
             @click="dialog = false"
+            color="red"
+            outlined
           ></v-btn>
         </template>
 
@@ -31,20 +42,16 @@
             <v-text-field
                 class="ma-3 pa-3 bd-radius"
                 v-model="email"
-                :rules="emailRules"
                 label="E-mail"
                 color="success"
-                hide-details
                 required>
             </v-text-field>
 
             <v-text-field
                 class="ma-3 pa-3 bd-radius"
                 v-model="password"
-                :rules="password"
                 label="Password"
                 color="success"
-                hide-details
                 required>
             </v-text-field>
 
@@ -62,6 +69,8 @@
     data () {
       return {
         dialog: false,
+        email: "",
+        password: ""
       }
     },
   }

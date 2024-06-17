@@ -28,10 +28,6 @@ const routes = [
   {
     path:"/sobre",
     component: Sobre
-  },
-  {
-    path:"/login",
-    component: Login
   }
 ];
 
