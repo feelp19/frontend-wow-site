@@ -1,23 +1,23 @@
 <template>
-    <v-container>
-      <v-row>
-        <v-col cols="4">
-          <v-card class="pa-4">
+        <v-col cols="2">
+          <v-card class="pa">
             <v-card-title>
-              Melhores Jogadores do Servidor
+              Ranking
             </v-card-title>
             <v-divider></v-divider>
             <v-card-item>
-              <v-simple-table fixed-header class="h-100">
+              <v-simple-table fixed-header>
                 <thead>
                   <tr>
                     <th class="text-left">Nome</th>
+                    <v-spacer></v-spacer>
                     <th class="text-left">Pontos</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr v-for="item in desserts" :key="item.name">
                     <td>{{ item.name }}</td>
+                    <v-spacer></v-spacer>
                     <td>{{ item.points }}</td>
                   </tr>
                 </tbody>
@@ -25,8 +25,6 @@
             </v-card-item>
           </v-card>
         </v-col>
-      </v-row>
-    </v-container>
   </template>
   
 

@@ -23,7 +23,7 @@
         </router-link>
 
         <router-link to="/sobre">
-          <v-btn>Sobre o servidor</v-btn>
+          <v-btn>Sobre</v-btn>
         </router-link>
 
         <router-link to="/login">
