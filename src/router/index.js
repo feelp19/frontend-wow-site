@@ -10,7 +10,6 @@ import mainComponent from "@/components/mainComponent.vue";
 import Cadastro from "@/components/Cadastro.vue"
 import Noticias from "@/components/Noticias.vue"
 import Sobre from "@/components/Sobre.vue"
-import Login from "@/components/loginComponent.vue"
 
 const routes = [
   {

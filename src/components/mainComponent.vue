@@ -26,7 +26,7 @@
           <v-btn>Sobre</v-btn>
         </router-link>
 
-        <router-link>
+        <router-link to="#">
           <LoginComponent />
         </router-link>
         
