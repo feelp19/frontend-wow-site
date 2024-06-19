@@ -1,14 +1,28 @@
-import os
-from supabase import create_client, Client
-from dotenv import load_dotenv
-load_dotenv()
+from connection import Connection
 
-url: str = os.getenv("URL")
-key: str = os.getenv("KEY")
-supabase: Client = create_client(url, key)
+class Query(Connection):
+    def __init__(self):
+        connection_status = self.conectar()
+        if connection_status != 'Conectado':
+            raise Exception(connection_status)
+    
+    def selecionar(self, table, attr):
+        try:
+            response = self.supabase.table(table).select(attr).execute()
+            return response
+        except Exception as e:
+            return f'Erro ao executar a consulta: {str(e)}'
+    
+    def inserir_usuario(self, name, username, email, senha):
+        try:
+            response = self.supabase.table('user').insert({"name": name, "username":username, "email": email, "password": senha}).execute()
+            return f'Inserido com sucesso'
+        except Exception as e:
+            return f'Erro ao executar a Query: {str(e)}'
 
-data, count = supabase.table('user').insert({"id": 1, "name": "Felipe de Pietro", "username": "feelp19", "email": "flp.pietro19@gmail.com", "senha":"sk8203040"}).execute()
-data, count = supabase.table('user').insert({"id": 2, "name": "Many gold", "username":"lokokkx3", "email":"lokokkx3@gmail.com", "senha":"manylokko19"}).execute()
-
-response = supabase.table('user').select("*").execute()
-
+    def inserir_news(self, name, description, likes):
+        try:
+            response = self.supabase.table('news').insert({"name": name, "description": description, "likes": likes}).execute()
+            return f'Inserido com sucesso'
+        except Exception as e:
+            return f'Erro ao executar a Query: {str(e)}'

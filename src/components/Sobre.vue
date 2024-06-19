@@ -1,10 +1,11 @@
 <template>
-    <v-card class="vw-width pa-4 ma-6 mx-auto">
+    <v-card class="vw-width pa-2 ma-2" variant="outlined">
         <v-col cols="12" md="12">
             <v-card-item>
-                <v-card-title>História do servidor</v-card-title>
+                <font-awesome-icon icon="fa-solid fa-timeline" />
+                <v-card-title class="mt-2">História do servidor</v-card-title>
                 <br>
-                <v-card-text class="bg-surface-light pt-4">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</v-card-text>
+                <v-card-text class="bg-surface-light pt-2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</v-card-text>
             </v-card-item>
         </v-col>
     </v-card>
@@ -12,6 +13,6 @@
 
 <style scoped>
 .vw-width {
-  width: 95vw;
+  width: 98vw;
 }
 </style>
